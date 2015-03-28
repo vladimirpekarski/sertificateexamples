@@ -5,6 +5,27 @@ package graphicshape;
  */
 public class Circle extends Shape {
     private int radius;
+    private int xPos;
+    private int yPos;
+
+    public Circle() {
+        xPos = 20;
+        yPos = 20;
+        radius = 10;
+    }
+
+    public Circle(int xPos, int yPos) {
+        this.xPos = xPos;
+        this.yPos = yPos;
+        this.radius = 10;
+    }
+
+    public Circle(int xPos, int yPos, int radius) {
+        this.xPos = xPos;
+        this.yPos = yPos;
+        this.radius = radius;
+    }
+
 
     public void area() {
         System.out.println("area:" + 3.14 * radius * radius);
@@ -12,5 +33,13 @@ public class Circle extends Shape {
 
     void fillColor() {
         System.out.println("color:" + color); //protected field in subclass
+    }
+
+    public void fillColor(int red, int green, int blue) {
+        //
+    }
+
+    public void fillColor(float hue, float saturation, float brightness) {
+        //
     }
 }

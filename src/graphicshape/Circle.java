@@ -9,15 +9,11 @@ public class Circle extends Shape {
     private int yPos;
 
     public Circle() {
-        xPos = 20;
-        yPos = 20;
-        radius = 10;
+        this(20, 20, 10);
     }
 
     public Circle(int xPos, int yPos) {
-        this.xPos = xPos;
-        this.yPos = yPos;
-        this.radius = 10;
+        this(xPos, yPos, 10);
     }
 
     public Circle(int xPos, int yPos, int radius) {

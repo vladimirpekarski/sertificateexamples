@@ -21,9 +21,9 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        Point point1 = new Point(10, 20);
-        Point point2 = new Point(50, 100);
-        Point point3 = new Point(10, 20);
+        Object point1 = new Point(10, 20);
+        Object point2 = new Point(50, 100);
+        Object point3 = new Point(10, 20);
 
         System.out.println("point1 equals point2 is " + point1.equals(point2));
         System.out.println("point1 equals point3 is " + point1.equals(point3));

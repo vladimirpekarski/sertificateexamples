@@ -12,12 +12,19 @@ public class Point {
         this.yPos = yPos;
     }
 
-    public boolean equals(Point other) {
+
+    @Override
+    public boolean equals(Object other) {
         if (other == null) {
             return false;
         }
 
-        return ((xPos == other.xPos) && (yPos == other.yPos));
+        if (other instanceof Point) {
+            Point anotherPoint = (Point) other;
+            return ((xPos == anotherPoint.xPos) && (yPos == anotherPoint.yPos));
+        }
+
+        return false;
     }
 
     public static void main(String[] args) {

@@ -12,6 +12,10 @@ public class Circle extends Shape {
         this(20, 20, 10);
     }
 
+    public Circle(int radius) {
+        this(20, 20, radius);
+    }
+
     public Circle(int xPos, int yPos) {
         this(xPos, yPos, 10);
     }
@@ -23,8 +27,9 @@ public class Circle extends Shape {
     }
 
 
-    public void area() {
-        System.out.println("area:" + 3.14 * radius * radius);
+    @Override
+    public double area() {
+        return  Math.PI * radius * radius;
     }
 
     void fillColor() {

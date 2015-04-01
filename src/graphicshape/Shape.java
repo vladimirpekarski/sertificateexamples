@@ -3,10 +3,17 @@ package graphicshape;
 /**
  * Created by v.pekarsky on 26.03.15.
  */
-public class Shape {
+abstract public class Shape {
+    private Shape parentShape;
     protected int color;
 
-    public double area() {
-        return 0; // default
+    public abstract double area();
+
+    public Shape getParentShape() {
+        return parentShape;
+    }
+
+    public void setParentShape(Shape parentShape) {
+        this.parentShape = parentShape;
     }
 }

@@ -13,7 +13,7 @@ abstract public class Shape {
         return parentShape;
     }
 
-    public void setParentShape(Shape parentShape) {
+    final public void setParentShape(Shape parentShape) {
         this.parentShape = parentShape;
     }
 }

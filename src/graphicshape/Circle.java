@@ -1,8 +1,5 @@
 package graphicshape;
 
-/**
- * Created by v.pekarsky on 26.03.15.
- */
 public class Circle extends Shape {
     private int radius;
     private int xPos;

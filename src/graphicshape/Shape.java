@@ -1,11 +1,29 @@
 package graphicshape;
 
-/**
- * Created by v.pekarsky on 26.03.15.
- */
 abstract public class Shape {
     private Shape parentShape;
     protected int color;
+
+    public static class Color {
+        int red;
+        int green;
+        int blue;
+
+        public Color() {
+            this(0, 0, 0);
+        }
+
+        public Color(int red, int green, int blue) {
+            this.red = red;
+            this.green = green;
+            this.blue = blue;
+        }
+
+        @Override
+        public String toString() {
+            return " red = " + red + "; green = " + green + "; blue = " + blue;
+        }
+    }
 
     public abstract double area();
 

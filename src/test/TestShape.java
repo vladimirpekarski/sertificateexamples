@@ -1,8 +1,9 @@
-package graphicshape;
+package test;
 
-/**
- * Created by asus on 29.03.15.
- */
+import graphicshape.Circle;
+import graphicshape.Shape;
+import graphicshape.Square;
+
 public class TestShape {
     public static void main(String[] args) {
         Shape shape1 = new Circle(10);

@@ -1,8 +1,5 @@
 package graphicshape;
 
-/**
- * Created by asus on 29.03.15.
- */
 public class Square extends Shape {
     private int side;
 

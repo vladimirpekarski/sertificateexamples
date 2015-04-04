@@ -1,8 +1,5 @@
 package inheritance;
 
-/**
- * Created by asus on 29.03.15.
- */
 public class TestNumber {
 
     public static double sum(Number []nums) {

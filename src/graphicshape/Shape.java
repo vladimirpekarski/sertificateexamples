@@ -1,6 +1,6 @@
 package graphicshape;
 
-abstract public class Shape {
+abstract public class Shape implements Rollable{
     private Shape parentShape;
     protected int color;
 

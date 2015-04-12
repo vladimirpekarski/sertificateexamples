@@ -1,6 +1,6 @@
 package graphicshape;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Rollable{
     private int radius;
     private int xPos;
     private int yPos;
@@ -38,6 +38,11 @@ public class Circle extends Shape {
     }
 
     public void fillColor(float hue, float saturation, float brightness) {
+        //
+    }
+
+    @Override
+    public void roll(float degree) {
         //
     }
 }

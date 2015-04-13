@@ -1,4 +1,4 @@
-package patterns.firstexample;
+package patterns.wrongfirstexample;
 
 public class TestClass {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package patterns.firstexample;
+package patterns.wrongfirstexample;
 
 public class ShapeArchiver {
     public void update(Circle circle) {

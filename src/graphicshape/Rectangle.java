@@ -8,4 +8,9 @@ public class Rectangle extends Shape {
     public double area() {
         return length * height;
     }
+
+    @Override
+    public void roll(float degree) {
+
+    }
 }

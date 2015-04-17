@@ -1,4 +1,4 @@
-package generics;
+package generics.raw;
 
 import java.util.Vector;
 

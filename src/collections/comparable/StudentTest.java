@@ -13,7 +13,8 @@ public class StudentTest {
         System.out.println("Student-ID \t Name \t CGPA (for 4.0)");
         System.out.println(Arrays.toString(students));
 
-        Arrays.sort(students);
+//        Arrays.sort(students);
+        Arrays.sort(students, new CGPAComparator());
 
         System.out.println("After sorting by student ID");
         System.out.println("Student-ID \t Name \t CGPA (for 4.0)");

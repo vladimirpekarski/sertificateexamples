@@ -1,4 +1,4 @@
-package io;
+package io.console;
 
 import java.io.Console;
 import java.util.Arrays;

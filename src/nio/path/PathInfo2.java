@@ -1,4 +1,4 @@
-package nio;
+package nio.path;
 
 import java.io.IOException;
 import java.nio.file.Path;

@@ -6,26 +6,18 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class MyFileVisitor extends SimpleFileVisitor {
+public class MyFileVisitor extends SimpleFileVisitor<Path> {
     @Override
-    public FileVisitResult preVisitDirectory(Object dir, BasicFileAttributes attrs) throws IOException {
-        if (dir instanceof Path) {
-            Path tempPath = (Path) dir;
-            System.out.println("---------Derictory name: " + tempPath);
-            return FileVisitResult.CONTINUE;
-        }
+    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+        System.out.println("file name; " + file.getFileName());
 
-        return null;
+        return FileVisitResult.CONTINUE;
     }
 
     @Override
-    public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
-        if (file instanceof Path) {
-            Path tempPath = (Path) file;
-            System.out.println("file name: " + tempPath.getFileName());
-            return FileVisitResult.CONTINUE;
-        }
+    public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+        System.out.println("----------------Dir name:" + dir + "--------");
 
-        return null;
+        return FileVisitResult.CONTINUE;
     }
 }

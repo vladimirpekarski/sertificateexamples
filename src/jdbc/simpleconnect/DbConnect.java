@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.simpleconnect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

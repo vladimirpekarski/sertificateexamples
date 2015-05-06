@@ -9,7 +9,7 @@ public class Dbconnector {
         String url = "jdbc:mysql://localhost:3306/";
         String database = "addressBook";
         String userName = "root";
-        String password = "Pa$$41372098";
+        String password = "";
 
         return DriverManager.getConnection(url + database, userName, password);
     }

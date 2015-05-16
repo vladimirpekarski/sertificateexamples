@@ -11,6 +11,10 @@ public class ScanInt {
             System.out.println("You typed the integer value: " + conseleScanner.nextInt());
         } catch (InputMismatchException e) {
             System.out.println("Error: You typed some text that is not an integer value...");
+            e.printStackTrace();
+            for (StackTraceElement element : e.getStackTrace()) {
+                System.out.println(element);
+            }
         }
     }
 }
